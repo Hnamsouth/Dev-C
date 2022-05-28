@@ -24,7 +24,7 @@ int kiemtrauoc(int n,int ar[],int min){
             if(ar[i]==0){
                 continue;
             }else{
-                if(ar[i]%j!=0||-ar[i]%j!=0){
+                if(ar[i]%j!=0){
                     k=false;
                 }
             }
