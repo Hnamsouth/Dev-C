@@ -13,13 +13,13 @@ int min(int n,int ar[]){
     return Min;
     // neu hàm min =0 thì mảng ko có ước chung.
 }
-int ttd(int min){
-    return abs(min);
-}
+// int ttd(int min){
+//     return abs(min);
+// }
 int kiemtrauoc(int n,int ar[],int min){
     int ucln;
     bool k=true;
-    for(int j=1;j<=ttd(min);j++){
+    for(int j=1;j<=abs(min);j++){
         for(int i=0;i<n;i++){
             if(ar[i]==0){
                 continue;
@@ -65,7 +65,7 @@ int main(){
     // int a=5,b=3;
     // cout<<tinhsomu(a,b);
     int n=10;
-    // int ar[10]={0,5,-6,12,8,4,-10,200,20,13};
+    int ar[10]={0,5,-6,12,8,4,-10,200,20,13};
     // int ar[10]={0,0,0,0,0,0,0,0,0,0};
     // sntMin(n,ar);
     // cout<<sntMin(n,ar); 
