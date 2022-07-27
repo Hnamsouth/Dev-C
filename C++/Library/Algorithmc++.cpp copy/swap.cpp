@@ -1,0 +1,33 @@
+// swap example
+#include <iostream>     // std::cout
+#include <algorithm>    // std::swap
+#include <vector>       // std::vector
+ 
+int main () {
+ 
+  int x=10, y=20;                              // x:10 y:20
+  std::swap(x,y);                              // x:20 y:10
+ 
+  std::vector<int> foo (4,x), bar (6,y);       // foo:4x20 bar:6x10
+  std::swap(foo,bar);                          // foo:6x10 bar:4x20
+ 
+  std::cout << "foo contains:";
+  for (std::vector<int>::iterator it=foo.begin(); it!=foo.end(); ++it)
+    std::cout << ' ' << *it;
+  std::cout << '\n';
+ 
+
+    int ar[7]={5,6132,18,1,12,12,3};
+    for(int i=0;i<7;i++){
+        for(int j=0;j<7;j++){
+            if(ar[i]>ar[j]){
+                std::swap(ar[i],ar[j]);
+            }
+        }
+    }
+    for(int i=0;i<7;i++){
+        std::cout<<ar[i]<<" ";
+    }
+  return 0;
+}
+ 
